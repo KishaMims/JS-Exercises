@@ -262,18 +262,20 @@ function exercise9(item) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
- switch(item){
+  switch(item) {
     case 1:
-    answer9 = ("You won!");
-    break;
+      answer9 = ("You won!");
+      break;
     case 7:
-    answer9 = ("You are lucky!");
-    break;
+      answer9 = ("You are lucky!");
+      break;
     case 101:
-    answer9 = ("You are one in a million!");
-    break;
+      answer9 = ("You are one in a million!");
+      break;
+    case typeof item != "number":
+    answer9= ("Please send a number, that was a " + typeof item);
     default:
-    answer9 = ("Please send a number, that was a " + typeof item);
+      answer9 = ("Thanks for that!");
   }
   // --------------------------------------------
   // And above here
@@ -284,6 +286,7 @@ function exercise9(item) {
 console.log(exercise9(1));
 console.log(exercise9("hello"));
 console.log(exercise9(true));
+console.log(exercise9(15));
 
 // EXERCISE 10.
 // This question is a modified version of a classic programming question
