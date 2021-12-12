@@ -43,6 +43,26 @@ for(let problemThree = 1; problemThree < 6; problemThree++){
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
 // writing loops in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
+let counter = 11;
+while (counter >=2) {
+  counter--;
+  console.log(counter);
+}
+
+let problemFour = "";
+let z = 10;
+do{
+ problemFour = problemFour + z;
+ z--
+} while(z > 1);
+console.log(problemFour);
+
+let issueFour = '';
+for (let f = 10; f > 1; f--) {
+  issueFour = issueFour + f;
+}
+console.log(issueFour);
+
 // Exercise 5. Write a loop that prints the integers from 7 to 27. Write this
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
