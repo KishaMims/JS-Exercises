@@ -116,12 +116,20 @@ console.log(issueSix);
 
 // There is no condtion to stop the while loop here. Counter should have a place (interger to stop at.) 
 
-let counterFour = 1;
+*/let counterFour = 1;
 while (counterFour < 2) {
   console.log("HELP ME!");
   counterFour--;
-}
+} */
 
+
+//The loop is always going to contitue becuse counter will awlays be less than 2 here with the current condtions. 
+
+let counterFour = 1;
+while (counterFour >= -98) {
+  counterFour--;
+  console.log("HELP ME!");
+}
 
 
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop
