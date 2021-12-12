@@ -66,19 +66,63 @@ console.log(issueFour);
 // Exercise 5. Write a loop that prints the integers from 7 to 27. Write this
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
+let sevenAnswer = 6;
+while(sevenAnswer <= 26){
+  sevenAnswer++;
+  console.log(sevenAnswer);
+}
+
+let sevenProblem = "";
+let g= 7;
+do{
+  sevenProblem = sevenProblem + g;
+  g++
+} while(g < 28);
+console.log(sevenProblem); 
+
+let issueFive = "";
+for(let a = 7; a < 28; a++){
+  issueFive = issueFive + a;
+}
+console.log(issueFive);
+
 // Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
 // I.e. it will print 10, then 20, then 30, etc.
 // Write this loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
+let sixAnswer = 0;
+while(sixAnswer <100){
+  sixAnswer +=10;
+  console.log(sixAnswer);
+} 
+
+let sixProblem = "";
+let q = 10;
+do{
+  sixProblem = sixProblem + q;
+  q+=10
+} while(q < 110);
+console.log(sixProblem);  
+
+let issueSix = "";
+for(let s = 10; s < 110; s+=10){
+  issueSix = issueSix + s;
+}
+console.log(issueSix);
+
 // Exercise 7. Add a comment as to why the following loop is an infinite loop (will
 // run without ever stopping). Then fix the loop so that it stops when
 // counterFour is equal to -100.
+
+// There is no condtion to stop the while loop here. Counter should have a place (interger to stop at.) 
 
 let counterFour = 1;
 while (counterFour < 2) {
   console.log("HELP ME!");
   counterFour--;
 }
+
+
 
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop
 // (your choice which type) that prints the integers from 0 to that number.
