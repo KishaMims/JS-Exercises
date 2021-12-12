@@ -197,10 +197,10 @@ inside 1
 *********************************** 
 */
 
-for (let outsideCounter = 0; outsideCounter <= 3 /*???*/; ) {
+for (let outsideCounter = 0; outsideCounter <= 3; outsideCounter++ ) {
   console.log("counting down from", outsideCounter);
-  for (let insideCounter = outsideCounter /*???*/ /*???*/; ; ) {
-    console.log("inside" /*???*/);
+  for (let insideCounter = outsideCounter; insideCounter >= 1; insideCounter--) {
+    console.log("inside" + " " +insideCounter );
   }
   console.log("***********************************");
 }
@@ -208,6 +208,6 @@ for (let outsideCounter = 0; outsideCounter <= 3 /*???*/; ) {
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+// This was more difficult than week 1 because I have not been using loops daily. I forgot some of the systax and needed to go to MDN docs for referece.
 
 // Email your file to us or commit your file to GitHub and email us a link.
