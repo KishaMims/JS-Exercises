@@ -23,6 +23,15 @@ function looping(){
 // Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
 
+let lessonTwo = "";
+let n = 1;
+do{
+  lessonTwo = lessonTwo +n;
+  n++;
+} while(n < 6);
+
+console.log(lessonTwo);
+
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
 
