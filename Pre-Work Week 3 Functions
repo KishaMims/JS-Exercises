@@ -128,6 +128,29 @@ function mysteryFunction2(p1, p2) {
 }
 const a = mysteryFunction2(10, 4);
 const b = mysteryFunction2(a, 1);
+
+ //Exercise 9. This exercise is to practice reading the documentation for functions.
+// String.split() is a function in the JavaScript standard library that you can use in your code.
+// Read about the split() function here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+// Try to use it to solve the following challenges:
+
+
+// Here's a string I made representing my grocery list.
+// Using split() and groceryList, make an array of my grocery list items
+const groceryList = "eggs,carrots,orange juice";
+
+const groceryListCopy= groceryList.split(",");
+console.log(groceryListCopy);
+
+
+// Here's a string I made representing my morning schedule.
+// Using split() and mySchedule, make an array of the *first 2* things I do in the morning
+// There are multiple ways to do this, but try doing it using only the split() function.
+
+const mySchedule = "wake up--->brush teeth--->eat breakfast--->go to work";
+
+console.log(mySchedule.split("--->",2));
+
 console.log("The value of a is " + a);
 console.log("The value of b is " + b);
 
