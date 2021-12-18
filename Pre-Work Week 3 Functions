@@ -84,11 +84,12 @@ console.log(exerciseFive(20));
 // Then write some function calls you would use to test your function.
 
 function exerciseSix(number,string){
-  return string.repeat(number);
-  }
+//  return string.repeat(number);
+  for (let i = 0; i < number; i++) {
+      console.log(string);
+   }
+}
 console.log(exerciseSix(8,"here we go "));
-console.log(exerciseSix(6,"answer six "));
-console.log(exerciseSix(12,"is this right? "));
 
 
 // Exercise 7. Read the following code (don't run it yet)
@@ -128,6 +129,26 @@ function mysteryFunction2(p1, p2) {
 }
 const a = mysteryFunction2(10, 4);
 const b = mysteryFunction2(a, 1);
+console.log("The value of a is " + a);
+console.log("The value of b is " + b);
+
+// Without running the code, write down in a comment:
+// 1. What mysteryFunction2 does
+// it is the function name and it passes to parameters through.
+
+// 2. What prints out for the value of a
+
+// 6
+
+// 3. What prints out for the value of b
+
+// 5
+
+// Now run the code and see if you're correct.
+
+// Were you correct? If not, what did you learn?
+// Yes I was correct for this one. I learned here about variable definitions and them being const so they cannot change. 
+
 
  //Exercise 9. This exercise is to practice reading the documentation for functions.
 // String.split() is a function in the JavaScript standard library that you can use in your code.
@@ -151,22 +172,8 @@ const mySchedule = "wake up--->brush teeth--->eat breakfast--->go to work";
 
 console.log(mySchedule.split("--->",2));
 
-console.log("The value of a is " + a);
-console.log("The value of b is " + b);
 
-// Without running the code, write down in a comment:
-// 1. What mysteryFunction2 does
-// it is the function name and it passes to parameters through.
-
-// 2. What prints out for the value of a
-
-// 6
-
-// 3. What prints out for the value of b
-
-// 5
-
-// Now run the code and see if you're correct.
-
-// Were you correct? If not, what did you learn?
-// Yes I was correct for this one. I learned here about variable definitions and them being const so they cannot change. 
+// Congrats, you made it to the end!
+// Did you find this easy or hard? If you used references, which ones helped you?
+// Please answer in a comment below.
+//I used MDN docs, I also went to the study session to help undestand the split functions. I also went back to freecodecamp to reviewe split lessons. 
