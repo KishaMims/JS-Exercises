@@ -1,0 +1,79 @@
+// Week 3 - Functions
+
+// In the following exercises, you will need to place your code or answer underneath each
+// exercise prompt.
+
+// First try answering these without using references or looking up any information.
+// Then, check your answer by using references and/or running your code.
+// You can run your JS code using the Chrome or Firefox Developer tools, or by using Node.js.
+// Feel free to update your answers if you got them wrong at first -- this exercise is for your own learning.
+// But make sure you understand why the correct answer is right.
+
+// Exercise 1. Define a function called logGreeting() that prints the string “Hello!” (use console.log).
+// Underneath the function, write the line of code that runs the function.
+
+function logGreeting(){
+  console.log("Hello!");
+}
+
+logGreeting();
+
+// Exercise 2. Define a function called getName() that *returns* a string that is your name.
+// Remember, this function should return the string -- not print it.
+// Then print your name in the console by passing getName() into the console.log() function.
+
+function getName() {
+  return ("NeKisha Mims")
+}
+
+console.log(getName());
+
+
+// Exercise 3. Call a function within a function -- Write a function called logGreeting2()
+// that prints a full sentence that contains your name: "Hello! My name is <name>."
+// logGreeting2 should call myName() to get your name.
+// Then print your greeting to the console by calling logGreeting2().
+
+function logGreeting2() {
+ return ("Hello! My name is " + myName() +".");
+
+function myName() {
+  return "NeKisha Mims";
+ }
+}
+
+(logGreeting2());
+
+
+// Exercise 4. Write a function that takes 3 parameters that are all numbers.
+// The function should return the sum of the 3 numbers.
+// Then write some function calls you would use to test your function.
+
+function excerciseFour(num1, num2, num3){
+   return num1 + num2 + num3;
+}
+
+console.log(excerciseFour(4,5,6));
+console.log(excerciseFour(10,10,10));
+console.log(excerciseFour(200,300,400));
+
+
+// Exercise 5. Let's say a museum gives a discount for children ages 14 or under, and seniors 65 or older.
+// Write a function that takes in a person's age and returns true if they should get a discount.
+// Otherwise it should return false.
+// Then write some function calls you would use to test your function.
+
+function exerciseFive(age){
+  if (age <= 14 || age >= 65) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(exerciseFive(14));
+console.log(exerciseFive(3));
+console.log(exerciseFive(45));
+console.log(exerciseFive(65));
+console.log(exerciseFive(70));
+console.log(exerciseFive(20));
