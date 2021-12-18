@@ -77,3 +77,15 @@ console.log(exerciseFive(45));
 console.log(exerciseFive(65));
 console.log(exerciseFive(70));
 console.log(exerciseFive(20));
+
+
+// Exercise 6. Write a function that takes 2 parameters -- one number and one string.
+// The function should print the string the given number of times.
+// Then write some function calls you would use to test your function.
+
+function exerciseSix(number,string){
+  return string.repeat(number);
+  }
+console.log(exerciseSix(8,"here we go "));
+console.log(exerciseSix(6,"answer six "));
+console.log(exerciseSix(12,"is this right? "));
