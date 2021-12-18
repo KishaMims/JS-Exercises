@@ -89,3 +89,61 @@ function exerciseSix(number,string){
 console.log(exerciseSix(8,"here we go "));
 console.log(exerciseSix(6,"answer six "));
 console.log(exerciseSix(12,"is this right? "));
+
+
+// Exercise 7. Read the following code (don't run it yet)
+function mysteryFunction1(p1) {
+  return p1 * 2;
+}
+const y = 4;
+const z = mysteryFunction1(y);
+console.log("The value of y is " + y);
+console.log("The value of z is " + z);
+
+// Without running the code, write down in a comment:
+// 1. What mysteryFunction1 does
+
+// This is the name of the function to be called. 
+
+// 2. What prints out for the value of y
+
+// eight?
+
+// 3. What prints out for the value of z
+
+// four?
+
+// Now run the code and see if you're correct.
+
+
+// Were you correct? If not, what did you learn?
+
+// I was not correct I got the numbers mixed up between the two. I see now that y is defined as four so it is always going to be four for the value.
+
+
+// Exercise 8. Read the following code (don't run it yet)
+function mysteryFunction2(p1, p2) {
+  const x = p1 - p2;
+  return x;
+}
+const a = mysteryFunction2(10, 4);
+const b = mysteryFunction2(a, 1);
+console.log("The value of a is " + a);
+console.log("The value of b is " + b);
+
+// Without running the code, write down in a comment:
+// 1. What mysteryFunction2 does
+// it is the function name and it passes to parameters through.
+
+// 2. What prints out for the value of a
+
+// 6
+
+// 3. What prints out for the value of b
+
+// 5
+
+// Now run the code and see if you're correct.
+
+// Were you correct? If not, what did you learn?
+// Yes I was correct for this one. I learned here about variable definitions and them being const so they cannot change. 
