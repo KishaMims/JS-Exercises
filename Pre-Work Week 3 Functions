@@ -42,7 +42,7 @@ function myName() {
  }
 }
 
-(logGreeting2());
+console.(logGreeting2());
 
 
 // Exercise 4. Write a function that takes 3 parameters that are all numbers.
