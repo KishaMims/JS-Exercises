@@ -13,7 +13,7 @@ function vowelsAndConstants(str) {
   for (let i = 0; i < result.length; i++) {
     console.log(result[i]);
   }
- // then looping through that reuslt so it will print each charater oout until the entire length is reached
+ // then looping through that reuslt so it will print each character oout until the entire length is reached
 }
 
 vowelsAndConstants("javascriptloops");
