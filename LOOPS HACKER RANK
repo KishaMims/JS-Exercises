@@ -7,7 +7,7 @@ function vowelsAndConstants(str) {
   // using reg x with the not ^ here to get the constants out into its own variable 
   //console.log(res2);
   let result = (res + res2);
-  // combining the to extracted letters into one result variable 
+  // combining the two extracted letters into one result variable 
   for (let i = 0; i < result.length; i++) {
     console.log(result[i]);
   }
