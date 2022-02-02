@@ -1,0 +1,17 @@
+function vowelsAndConstants(str) {
+  let res = str.match(/[aeiou]/g).join("");
+  //console.log(res);
+  // using reg x- to match for the vowels and move to its own variable 
+  // use regx expression site for the correct syntax 
+  let res2 = str.match(/[^aeiou]/g).join("");
+  // using reg x with the not ^ here to get the constants out into its own variable 
+  //console.log(res2);
+  let result = (res + res2);
+  // combining the to extracted letters into one result variable 
+  for (let i = 0; i < result.length; i++) {
+    console.log(result[i]);
+  }
+ // then looping through that reuslt so it will print each charater oout until the entire length is reached
+}
+
+vowelsAndConstants("javascriptsloops");
