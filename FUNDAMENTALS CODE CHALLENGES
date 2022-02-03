@@ -7,6 +7,7 @@
 
 
 function divisibleByThree(num) {
+//using nan to check here for edge case
   if (isNaN(num)) {
     return "Not a number!";
   } else if (num % 3 === 0) {
@@ -26,6 +27,7 @@ console.log(divisibleByThree("here"));
 // Choose names that make the code easy to understand.
 
 function stringCount(str) {
+// using typeof to check for edge case
   if (typeof str === 'string') {
     ;
     return str.length;
