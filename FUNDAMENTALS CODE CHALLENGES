@@ -76,7 +76,7 @@ console.log(numbersArray[0][0]);
 function countMinutes(currentTime = new Date().getTime()){
   let midnight = new Date(2022, 0, 1, 00, 00, 00).getTime();
     console.log(midnight,"This was the time then");
-  let timeDiff = (currentTime -midnight);
+  let timeDiff = (currentTime - midnight);
   console.log("The time difference is: " + timeDiff / 1000 * 60);
 }
 
