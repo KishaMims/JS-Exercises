@@ -1,0 +1,83 @@
+// Write a function below that accepts a number as the only argument.
+// The function should determine whether the number is divisible by 3,
+// and return either true or false.
+// Choose names that make the code easy to understand.
+//
+// Note:  None of the review # problems have tests included, but feel free to write your own.
+
+
+function divisibleByThree(num) {
+  if (isNaN(num)) {
+    return "Not a number!";
+  } else if (num % 3 === 0) {
+    return true;
+  } else if (!num % 3 === 0) {
+  } return false;
+
+}
+console.log(divisibleByThree(6));
+console.log(divisibleByThree(-3));
+console.log(divisibleByThree(0));
+console.log(divisibleByThree(20));
+console.log(divisibleByThree("here"));
+
+// Write a function that takes a string as the argument.
+// The function should return a number that is the number of characters in the string.
+// Choose names that make the code easy to understand.
+
+function stringCount(str) {
+  if (typeof str === 'string') {
+    ;
+    return str.length;
+  } else {
+    return "This is not a string."
+  }
+}
+
+console.log(stringCount("hello"));
+console.log(stringCount("435394583490ru74"));
+console.log(stringCount(""));
+console.log(stringCount(5));
+
+
+
+// 1. Create an array of numbers, (ex: [1, 2, 3])
+// 2. Without using any math operators, write 5 statements:
+//   - Return the first item in the array (ex: 1)
+//   - Return the last item in the array (ex: 3)
+//   - Add a new item to the end of the array (ex: [1,2,3,4])
+//   - Add an array to the beginning of the array. (ex: [["a","b","c"],1,2,3,4])
+//   - Return the first item from the first item in the array. (ex: "a")
+
+const numbersArray = [45, 32, 21, 19, 40];
+
+console.log(numbersArray[0]);
+console.log(numbersArray.slice(-1)[0]);
+numbersArray.push(67);
+console.log(numbersArray);
+numbersArray.unshift([75, "new", "here"]);
+console.log(numbersArray);
+console.log(numbersArray[0][0]);
+
+
+
+
+// Create a function that calculates how many minutes have elapsed from midnight until right now.
+// The function should still return an accurate answer,
+// even if you ran it a few minutes or hours later.
+
+ //function countMinutes(currentTime = new Date()) {
+  //  let midnight =  new Date(2022, 0, 3, 00, 00, 00);
+  //   console.log(midnight);
+  // let currentDate = new Date().getTime();
+  // console.log(currentDate, "in miliseconds");
+
+
+function countMinutes(currentTime = new Date().getTime()){
+  let midnight = new Date(2022, 0, 1, 00, 00, 00).getTime();
+    console.log(midnight,"This was the time then");
+  let timeDiff = (currentTime -midnight);
+  console.log("The time difference is: " + timeDiff / 1000 * 60);
+}
+
+countMinutes();
